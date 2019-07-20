@@ -1,0 +1,6 @@
+framework module Pods_Registration_App_For_User {
+  umbrella header "Pods-Registration App For User-umbrella.h"
+
+  export *
+  module * { export * }
+}
