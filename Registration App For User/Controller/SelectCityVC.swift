@@ -12,7 +12,8 @@ import SwiftyJSON
 import Kingfisher
 
 class SelectCityVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-   
+    @IBOutlet weak var progressBar: UIActivityIndicatorView!
+    
     var citylist = [CityModel]()
     
     @IBOutlet weak var cityNameCollection: UICollectionView!
@@ -29,12 +30,19 @@ class SelectCityVC: UIViewController, UICollectionViewDataSource, UICollectionVi
     }
     
     func getData() {
+        progressBar.startAnimating()
         Alamofire.request(url).responseJSON { (response) in
             if((response.result.value != nil)) {
+                
+                self.progressBar.isHidden = true
+                self.progressBar.stopAnimating()
+                
+                
                 let swiftyJsonValue = JSON(response.result.value!)
                 for data in swiftyJsonValue.arrayValue {
                     self.citylist.append(CityModel(cityimage: data["imgUrl"].stringValue, cityName: data["cityname"].stringValue))
                     DispatchQueue.main.async {
+                       
                         self.cityNameCollection.reloadData()
                     }
                     

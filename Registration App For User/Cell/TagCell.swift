@@ -16,5 +16,8 @@ class TagCell: UITableViewCell {
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var tagLbl: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
+    
+    @IBOutlet weak var tagBg: UIView!
+    
 
 }

@@ -11,6 +11,10 @@
 		B501C23E22E19BC00065A557 /* SelectCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501C23D22E19BC00065A557 /* SelectCityVC.swift */; };
 		B501C24122E19DAF0065A557 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501C24022E19DAF0065A557 /* CityCell.swift */; };
 		B501C24322E19E9A0065A557 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501C24222E19E9A0065A557 /* CityModel.swift */; };
+		B501EF9922E5AFC200A92979 /* ChooseCoachNameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501EF9822E5AFC200A92979 /* ChooseCoachNameModel.swift */; };
+		B501EF9B22E5BB1E00A92979 /* AlocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501EF9A22E5BB1E00A92979 /* AlocationCell.swift */; };
+		B501EF9D22E5C9C700A92979 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B501EF9C22E5C9C700A92979 /* PasswordVC.swift */; };
+		B501EFA122E5D81B00A92979 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B501EFA022E5D81B00A92979 /* GoogleService-Info.plist */; };
 		B5061F2622E303E0005B92DB /* SelectTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5061F2522E303E0005B92DB /* SelectTag.swift */; };
 		B5061F2822E30419005B92DB /* UserDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5061F2722E30419005B92DB /* UserDetailsVC.swift */; };
 		B5061F2A22E30530005B92DB /* ChooseCoachName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5061F2922E30530005B92DB /* ChooseCoachName.swift */; };
@@ -32,6 +36,10 @@
 		B501C23D22E19BC00065A557 /* SelectCityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCityVC.swift; sourceTree = "<group>"; };
 		B501C24022E19DAF0065A557 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		B501C24222E19E9A0065A557 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		B501EF9822E5AFC200A92979 /* ChooseCoachNameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCoachNameModel.swift; sourceTree = "<group>"; };
+		B501EF9A22E5BB1E00A92979 /* AlocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlocationCell.swift; sourceTree = "<group>"; };
+		B501EF9C22E5C9C700A92979 /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
+		B501EFA022E5D81B00A92979 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5061F2522E303E0005B92DB /* SelectTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTag.swift; sourceTree = "<group>"; };
 		B5061F2722E30419005B92DB /* UserDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVC.swift; sourceTree = "<group>"; };
 		B5061F2922E30530005B92DB /* ChooseCoachName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCoachName.swift; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 			children = (
 				B501C24022E19DAF0065A557 /* CityCell.swift */,
 				B5061F2F22E334C9005B92DB /* TagCell.swift */,
+				B501EF9A22E5BB1E00A92979 /* AlocationCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -115,6 +124,7 @@
 				B5FDDFE122E090C0009AF3A6 /* ViewController.swift */,
 				B5FDDFE322E090C0009AF3A6 /* Main.storyboard */,
 				B5FDDFE622E090C2009AF3A6 /* Assets.xcassets */,
+				B501EFA022E5D81B00A92979 /* GoogleService-Info.plist */,
 				B5FDDFE822E090C2009AF3A6 /* LaunchScreen.storyboard */,
 				B5FDDFEB22E090C2009AF3A6 /* Info.plist */,
 			);
@@ -126,9 +136,10 @@
 			children = (
 				B501C23D22E19BC00065A557 /* SelectCityVC.swift */,
 				B5061F2522E303E0005B92DB /* SelectTag.swift */,
-				B5061F2722E30419005B92DB /* UserDetailsVC.swift */,
 				B5061F2922E30530005B92DB /* ChooseCoachName.swift */,
+				B5061F2722E30419005B92DB /* UserDetailsVC.swift */,
 				B5061F2B22E30563005B92DB /* SingleCoachData.swift */,
+				B501EF9C22E5C9C700A92979 /* PasswordVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 			children = (
 				B501C24222E19E9A0065A557 /* CityModel.swift */,
 				B5061F2D22E319C8005B92DB /* TagModel.swift */,
+				B501EF9822E5AFC200A92979 /* ChooseCoachNameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FDDFEA22E090C2009AF3A6 /* LaunchScreen.storyboard in Resources */,
+				B501EFA122E5D81B00A92979 /* GoogleService-Info.plist in Resources */,
 				B5FDDFE722E090C2009AF3A6 /* Assets.xcassets in Resources */,
 				B5FDDFE522E090C0009AF3A6 /* Main.storyboard in Resources */,
 			);
@@ -282,7 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5061F3022E334C9005B92DB /* TagCell.swift in Sources */,
+				B501EF9D22E5C9C700A92979 /* PasswordVC.swift in Sources */,
 				B5061F2A22E30530005B92DB /* ChooseCoachName.swift in Sources */,
+				B501EF9922E5AFC200A92979 /* ChooseCoachNameModel.swift in Sources */,
 				B501C24322E19E9A0065A557 /* CityModel.swift in Sources */,
 				B5061F2E22E319C8005B92DB /* TagModel.swift in Sources */,
 				B5061F3322E33D5E005B92DB /* Common.swift in Sources */,
@@ -290,6 +305,7 @@
 				B5061F2622E303E0005B92DB /* SelectTag.swift in Sources */,
 				B5FDDFE222E090C0009AF3A6 /* ViewController.swift in Sources */,
 				B5061F2C22E30563005B92DB /* SingleCoachData.swift in Sources */,
+				B501EF9B22E5BB1E00A92979 /* AlocationCell.swift in Sources */,
 				B501C24122E19DAF0065A557 /* CityCell.swift in Sources */,
 				B5061F2822E30419005B92DB /* UserDetailsVC.swift in Sources */,
 				B5FDDFE022E090C0009AF3A6 /* AppDelegate.swift in Sources */,
